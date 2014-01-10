@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Kindergarten</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="English">
+	<meta name="description" content ="Kindergarten">
+	<meta name="keywords" content="Kindergarten, kids, school">
+	<meta name="Author" content="Some author">
+	
+	<script src="scripts/jquery-1.10.1.js" type="text/javascript"></script>
+	<script src="scripts/modernizr.custom.62960.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="styles/main-page.css"/>
+	
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" type="text/css" href="styles-ie/main-page.css"/>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<header class="clear">
+			<h1>
+				<img id="logo" src="images/logo.png" alt="kindergarten" width="200" height="55"/>
+			</h1>
+			<nav>
+				<ul>
+					<li id="li-nachalo"><a href="main-page.html">Home</a>
+					<li id="li-zanas"><a href="za-nas.html">About</a></li>
+					<li id="li-hranene"><a href="hranene.html">Meal</a></li>
+					<li id="li-porychki"><a href="#">Public projects</a></li>
+					<li id="li-galeriq"><a href="galeriq.html">Gallery</a></li>
+					<li id="li-contacti"><a href="contacti.html">Contacts</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="content" class="clear">
+			<div id="slider">
+				<img class="sp" src="images/kids-middle2.png" alt="8-mi mart detska gradina" width="600" height="337"/>
+				<img class="sp" src="images/kids-middle3.png" alt="8-mi mart detska gradina" width="600" height="337"/>
+				<img class="sp" src="images/kids-middle.png" alt="8-mi mart detska gradina" width="600" height="337"/>		
+			</div>				
+		</div>
+		<div id="content-sections" class="clear">
+			<section id="left-section" class="clear">
+				<h2>Nam libero tempore</h2>
+				<h3>KINDERGARTEN CHILDREN'S</h3>
+				<article>	
+					<p>ABCya! Kindergarten children's computer games & activities feature large and easy-to-use
+					navigation buttons as well as voice instructions. Games and activities include: alphabetical order,
+					upper-case and lower-case letters, counting numbers, connect the dots, numerical order, shapes, 
+					addition, e-storybooks and holiday games.<p><a href="#">Learn more</a></p></p>
+				</article>	
+			</section>
+			<section id="center-section" class="clear">
+				<h2>Nam libero tempore</h2>
+				<h3>KINDERGARTEN CHILDREN'S</h3>	
+				<article>
+					<p>ABCya! Kindergarten children's computer games & activities feature large and easy-to-use
+					navigation buttons as well as voice instructions. Games and activities include: alphabetical order,
+					upper-case and lower-case letters, counting numbers, connect the dots, numerical order, shapes, 
+					addition, e-storybooks and holiday games.<p><a href="#">Learn more</a></p></p>
+				</article>	
+			</section>
+			<section id="right-section" class="clear">
+				<h2>Nam libero tempore</h2>
+				<h3>KINDERGARTEN CHILDREN'S</h3>
+				<article>
+					<p>ABCya! Kindergarten children's computer games & activities feature large and easy-to-use
+					navigation buttons as well as voice instructions. Games and activities include: alphabetical order,
+					upper-case and lower-case letters, counting numbers, connect the dots, numerical order, shapes, 
+					addition, e-storybooks and holiday games.<p><a href="#">Learn more</a></p></p>
+				</article>	
+			</section>
+			<div id="box-shadow"></div>
+		</div>
+		<footer>
+			<hr/>
+			<ul>
+				<li><a href="8march-main-page.html">Home</a></li>
+				<li>|</li>
+				<li><a href="za-nas.html">About</a></li>
+				<li>|</li>
+				<li><a href="hranene.html">Meal</a></li>
+				<li>|</li>
+				<li><a href="galeriq.html">Gallery</a></li>
+				<li>|</li>
+				<li><a href="porychki.html">Public projects</a></li>
+				<li>|</li>
+				<li><a href="contacti.html">Contacts</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script>
+		//make slider for images
+		$(document).ready(function(){
+			$('.sp').first().addClass('active');
+			$('.sp').hide();    
+			$('.active').show();
+
+			$('#button-next').click(function(){
+				$('.active').removeClass('active').addClass('oldActive');    
+			    if ( $('.oldActive').is(':last-child')) {
+					$('.sp').first().addClass('active');
+				}
+				else{$('.oldActive').next().addClass('active');}
+				$('.oldActive').removeClass('oldActive');
+				$('.sp').fadeOut();
+				$('.active').fadeIn();
+			});
+
+		    $('#button-previous').click(function(){
+				$('.active').removeClass('active').addClass('oldActive');    
+			    if ( $('.oldActive').is(':first-child')) {
+					$('.sp').last().addClass('active');
+				}
+			    else{$('.oldActive').prev().addClass('active');}
+				$('.oldActive').removeClass('oldActive');
+				$('.sp').fadeOut();
+				$('.active').fadeIn();
+			});
+		});
+	</script>
+</body>
+</html>

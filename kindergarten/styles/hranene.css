@@ -1,0 +1,261 @@
+/* RESET */
+html, body, header, footer, nav, a, ul, li, div, section, article, p, h1, img, hr, br
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 62.5%;
+	font-family: Arial;
+}
+#wrapper{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1%;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	_zoom: 1;
+}
+header {
+	background: url('../images/background-header.png') no-repeat;
+	background-size: 100%;
+}
+#logo{
+	margin-left: 2%;
+	margin-top: 3%;
+	padding-bottom: 8%;
+	float: left;
+}
+nav{
+	margin-left: 25%;
+}
+header nav ul li a{
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-weight:900;
+	font-family: Arial;
+	text-align: center;
+	margin-top: 25%;
+	font-size: 2.2em;	
+}
+header nav ul li{
+	float: left;
+	height: 120px;
+	width: 175px;
+	margin-left: 1%;
+	display: inline-block;
+	list-style: none;
+	text-align: center;	
+}
+#li-nachalo{
+	width: 16%;
+	background: url('../images/nachalo.png') no-repeat center;
+	background-size: 100%;
+	margin-left: 0%;
+	margin-top: -1%;
+}
+#li-nachalo a{
+	margin-top: 33%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 
+			 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 
+			 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3,
+			 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 
+			 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3, 0 0 2px #1688b3;
+}
+#li-zanas{
+	position: relative;
+	width: 15%;
+	margin-left: -1%;
+	margin-top: 1%;
+	background: url('../images/za-nas.png') no-repeat center;
+	background-size: 100%;
+}
+#li-zanas a{
+	margin-top: 37%;
+	margin-left: 5%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 3px #fc0303, 0 0 3px #fc0303, 0 0 3px #fc0303, 0 0 3px #fc0303, 
+			 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 3px #fc0303, 
+			 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 3px #fc0303,
+			 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 3px #fc0303, 
+			 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 2px #fc0303, 0 0 3px #fc0303;
+}
+#li-hranene{
+	width: 16%;
+	margin-left: 0%;
+	margin-top: 1%;
+	background: url('../images/hranene.png') no-repeat center;
+	background-size: 100%;
+}
+#li-hranene a{
+	margin-top: 35%;
+	margin-left: -1%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px #38db06, 0 0 2px #38db06, 0 0 2px #38db06, 0 0 2px #38db06, 
+			 0 0 2px #38db06, 0 0 2px #38db06, 0 0 2px #38db06, 0 0 3px #38db06, 
+			 0 0 2px #38db06, 0 0 2px #38db06, 0 0 2px #38db06, 0 0 3px #38db06,
+			 0 0 2px #38db06, 0 0 2px #38db06, 0 0 2px #38db06, 0 0 3px #38db06, 
+			 0 0 2px #38db06, 0 0 2px #38db06, 0 0 2px #38db06, 0 0 3px #38db06;
+}
+#li-porychki{
+	position: relative;
+	width: 20%;
+	margin-top: -1%;
+	margin-left: 0%;
+	background: url('../images/porychki.png') no-repeat center;
+	background-size: 100%;
+}
+#li-porychki a{
+	margin-top: 20%;
+	margin-left: 15%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 2px #b904e6, 
+			 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 1px #b904e6, 0 0 2px #b904e6, 
+			 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 1px #b904e6, 0 0 3px #b904e6, 
+			 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 1px #b904e6, 0 0 3px #b904e6,
+			 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 1px #b904e6, 0 0 3px #b904e6, 
+			 0 0 2px #b904e6, 0 0 2px #b904e6, 0 0 1px #b904e6, 0 0 3px #b904e6;
+}
+#li-galeriq{
+	width: 15%;
+	margin-top: 0%;
+	margin-left: 0%;
+	margin-right: 1.5%;
+	background: url('../images/galeriq.png') no-repeat center;
+	background-size: 100%;
+}
+#li-galeriq a{
+	margin-top: 35%;
+	margin-left: 5%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 2px #fb758e, 
+			 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 3px #fb758e, 
+			 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 3px #fb758e,
+			 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 3px #fb758e, 
+			 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 2px #fb758e, 0 0 3px #fb758e;
+}
+#li-contacti{
+	width: 17%;
+	margin-top: 1%;
+	margin-left: -3%;
+	background: url('../images/contacti.png') no-repeat center;
+	background-size: 100%;
+}
+#li-contacti a{
+	margin-top: 36%;
+	margin-left: 8%;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 2px #001cf2, 
+			 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 3px #001cf2, 
+			 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 3px #001cf2,
+			 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 3px #001cf2, 
+			 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 2px #001cf2, 0 0 3px #001cf2;
+}
+#content h1{
+	height: 7%;
+	margin-left: 6%;
+	margin-top: -8%;
+	position: relative;
+	color: white;
+	font-family: Segoe Print;
+	
+	font-size: 7.7em;
+	text-align: center;
+	text-shadow: 1px 3px 1px #969493;
+}
+#content h2{
+	margin-top: 2%;
+}
+#content article{
+	width: 97%;
+	margin-top: -3.3%;
+}
+#content article h2, #content article p{
+	margin-left: 12%;
+	font-family: Arial;
+}
+#content article h2{	
+	font-size: 2.2em;
+	color: #00bff3;
+}
+#content article p{
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #757679;
+}
+#content article ol{
+	margin-left: 8.5%;
+	font-family: Arial;
+	font-size: 1.5em;
+	font-weight: bold;
+	list-style: none;
+}
+#content article ol li:nth-child(1){
+	color: #f7941d;
+}
+#content article ol li:nth-child(2){
+	color: #00ff00;
+}
+#content article ol li:nth-child(3){
+	color: #00aeef;
+}
+#content article ol li:nth-child(4){
+	color: #ed145b;
+}
+#content hr{
+	margin-top: 4%;
+	width: 100%;
+	height: 1px;
+	background-color: #cccccc;
+	border:none !important;
+}
+#moto{
+	height: 110px;
+	line-height: 4em;
+	font-size: 2.5em;
+	text-align: center;
+	color: #757679;
+}
+footer{
+	height: 70px;
+}
+footer hr{
+	width: 100%;
+	height: 1px;
+	background-color: #cccccc;
+	border:none !important;
+}
+footer ul{
+	list-style: none;
+	margin-left: 55%;
+	margin-top: 1%;
+	font-size: 1.5em;
+	font-family: Arial;
+	font-weight: 500;
+}
+footer a{
+	text-decoration: none;
+	color: #757679;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+footer ul li{
+	position: relative;
+	display: inline-block;
+	float: left;
+	padding-left: 1%;
+}
